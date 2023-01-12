@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #0D192C;
+}
+
+.container{
+    width: 327px;
+    height: 543px;
+    background-color: #15263F;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    border-radius: 15px;
+    animation: mymove 4s infinite;
+}
+
+
+@keyframes mymove{
+    50% {box-shadow: cyan 0px 0px 15px 5px;}    
+}
+
+
+
+
+.card{
+    margin: 24px;
+}
+
+
+.main-img{
+    width: 278px;
+    height: 278px;
+    border-radius: 8px;
+    margin-right: 1px;
+    margin-bottom: 24px;
+}
+
+.eye{
+    position: absolute;
+    left: 24px;
+    background-color: rgba(0, 255, 248, 0);
+    padding: 115px;
+    opacity: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    top: 24px;
+}
+
+.eye:hover{
+    background-color: rgba(0, 255, 248, 50.3%);
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.main-text{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27.72px;
+    font-family: 'Outfit';
+    color: White;
+    margin-bottom: 12px;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+
+.second-text{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    font-family: 'Outfit';
+    color: #8BACD9;  
+    margin-bottom: 16px;  
+}
+
+.price-time{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+
+.price{
+    display: flex;
+}
+
+.eth-icon{
+    width: 11px;
+    height: 18px;
+    color: #00FFF8;
+    margin-right: 6.48px;
+}
+
+.eth-price{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18.9px;
+    font-family: 'Outfit';
+    color: cyan;        
+}
+
+
+.time{
+    display: flex;
+    align-items: center;
+
+}
+
+.clock{
+    width: 13.33px;
+    height: 13.33px;
+    color: #8BACD9;
+    margin-right: 6.48px;
+} 
+
+.time-left{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.9px;
+    font-family: 'Outfit';
+    color: #8BACD9;           
+}
+
+
+.underline{
+    width: 278px;
+    height: 1px;
+    background-color: #2E405A;
+}
+
+.creation{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+
+.avatar{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    border: 1px white solid;
+    margin-right: 16px;
+    filter: grayscale(30%);
+    filter: saturate(70%)
+    
+}
+
+.creation-of{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.9px;
+    font-family: 'Outfit';
+    color: #8BACD9;
+    margin-right: 5px;     
+}
+
+.name{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.9px;
+    font-family: 'Outfit';
+    color: white;
+    text-decoration: none;
+    transition: ease-in-out 0.5s;
+}
+
+.main-text:hover{
+    color: cyan;
+    transition: 0.5s;
+}
+
+.name:hover{
+    color: cyan;
+    transition: 0.5s;
+}
+
+
+
+@media screen and (min-width: 376px) {
+    .container{
+        width: 350px;
+        height: 596px;
+        display: flex;
+        position: absolute;
+    }
+
+    
+    .main-img{
+        width: 302px;
+        height: 302px;
+        margin: auto;
+        margin-bottom: 24px;
+    }
+
+    .main-text{
+        margin-bottom: 16px;
+    }
+
+    .second-text{
+        margin-bottom: 24px;
+    }
+
+    .price-time{
+        margin-bottom: 24px;
+    }
+
+    .eye{
+        position: absolute;
+        left: 24px;
+        background-color: rgba(0, 255, 248, 0);
+        padding: 127px;
+        opacity: 0;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: ease-in-out 0.3s;
+        top: 24px;
+    }
+    
+    .eye:hover{
+        background-color: rgba(0, 255, 248, 50.3%);
+        transition: 0.3s;
+        opacity: 1;
+    }
+    
+    .eth-price{
+        font-size: 16px;
+    }
+
+    .time-left{
+        font-size: 16px;
+    }
+
+} 
